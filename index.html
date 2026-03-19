@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Wish for Shanzay</title>
+    <!-- Stylish Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <style>
+        /* [Global Styles from above go here] */
+        :root {
+            --bg-dark: #0a0b10;
+            --primary-gold: #d4af37;
+            --accent-gold: #f9e29d;
+            --text-main: #f8f9fa;
+        }
+
+        body {
+            background: radial-gradient(circle at center, #1a1c2c 0%, #0a0b10 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            overflow: hidden;
+        }
+
+        /* Starry Background Effect */
+        .stars {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 0;
+            background: transparent;
+            box-shadow: 400px 200px #fff, 800px 400px #fff, 1200px 600px #fff, 200px 800px #fff, 1500px 100px #fff;
+            opacity: 0.2;
+            animation: stars-float 50s linear infinite;
+        }
+
+        @keyframes stars-float {
+            from { transform: translateY(0); }
+            to { transform: translateY(-1000px); }
+        }
+
+        /* Wish Container */
+        .wish-card {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 40px;
+            max-width: 600px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fade-in 1.5s ease-out forwards;
+        }
+
+        .eid-logo {
+            font-size: 50px;
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+            animation: pulse 3s infinite ease-in-out;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3rem;
+            color: var(--primary-gold);
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        h1 span {
+            color: var(--text-main);
+            display: block;
+            font-size: 1.2rem;
+            letter-spacing: 5px;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        .beloved-name {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 2.5rem;
+            color: var(--accent-gold);
+            margin: 20px 0;
+            display: inline-block;
+            border-bottom: 1px solid var(--primary-gold);
+            padding-bottom: 5px;
+        }
+
+        .message {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #d1d1d1;
+            margin-top: 20px;
+            font-weight: 300;
+        }
+
+        /* Animations */
+        @keyframes fade-in {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+
+        /* Crescent Decor */
+        .crescent {
+            position: absolute;
+            top: -100px;
+            right: -100px;
+            width: 200px;
+            height: 200px;
+            background: transparent;
+            border-radius: 50%;
+            box-shadow: -20px 20px 0 0 var(--primary-gold);
+            opacity: 0.1;
+            transform: rotate(-20deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+    
+    <div class="wish-card">
+        <div class="crescent"></div>
+        <div class="eid-logo">✨🌙✨</div>
+        
+        <h1>Happy Eid 2k26 <span>To My Beloved</span></h1>
+        <div class="beloved-name">Shanzay</div>
+        
+        <p class="message">
+            As the crescent moon graces the sky, my heart finds its calm in thoughts of you. 
+            May this Eid bring as much light into your life as you have brought into mine. 
+            Wishing you a day filled with grace, peace, and endless joy.
+        </p>
+
+        <div style="margin-top: 40px; color: var(--primary-gold); font-size: 0.9rem; letter-spacing: 2px;">
+            ETERNALLY YOURS
+        </div>
+    </div>
+
+</body>
+</html>
